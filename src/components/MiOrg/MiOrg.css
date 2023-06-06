@@ -1,0 +1,35 @@
+.orgSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.orgSection .title {
+    color: #6278F7;
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 24px;
+    border-bottom: 4px solid #6278F7;
+} 
+
+.orgSection img {
+    position: absolute;
+    right: 25%;
+    cursor: pointer;
+}
+
+@media (max-width: 1175px) {
+    .orgSection {
+        flex-direction: column;
+    }
+    .orgSection .title {
+        margin: 10px;
+    } 
+    .orgSection img {
+        margin-top: 20px;
+        position: initial;
+        order: -1;
+    }
+}
